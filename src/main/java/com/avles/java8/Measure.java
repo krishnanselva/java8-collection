@@ -5,6 +5,22 @@ import java.util.stream.LongStream;
 
 /**
  * To illustrate the performance benefits using <code>java.util.stream</code>
+ *
+ * Problem description:
+ *
+ * Write a function with below algorithm that takes 2 numbers (start and end for an range) as parameters
+ * It should execute the algorithm for each number within the range of supplied numbers (start is inclusive, end is exclusive)
+ * Find out number of times (cycle) each number gets updated before it gets reduced to 1.
+ * Finally return the maximum cycle value.
+ *
+ * Algorithm
+ *
+ * 1. For any number
+ * 2. count
+ * 3. if number is even, then reduce the number by half
+ * 4.     else multiply by 3 and add 1
+ * 5. if number is not 1, go to step 2
+ *
  */
 public class Measure {
 
